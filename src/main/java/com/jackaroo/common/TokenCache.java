@@ -9,9 +9,9 @@ import org.slf4j.LoggerFactory;
 import java.util.concurrent.TimeUnit;
 
 public class TokenCache {
-
+    // 日志记录
     private static Logger logger = LoggerFactory.getLogger(TokenCache.class);
-
+    // token key的前缀
     public static final String TOKEN_PREFIX = "token_";
 
     private static LoadingCache<String, String> localCache = CacheBuilder.newBuilder()
